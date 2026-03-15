@@ -1089,7 +1089,7 @@ function closeNav() {
   document.body.style.overflow = '';
 }
 
-// Chiudi dropdown wallet cliccando fuori
+// Close wallet dropdown when clicking outside
 document.addEventListener('click', (e) => {
   if (!e.target.closest('.wallet-wrap')) {
     document.getElementById('walletDropdown')?.classList.remove('open');
@@ -1102,7 +1102,7 @@ async function connectWallet() {
     return;
   }
 
-  // Se LaunchMyNFT ha già reso il suo bottone, scrolliamo e lo triggeriamo
+  // If LaunchMyNFT has already rendered its button, scroll to it and trigger it
   const lmntBtn = document.querySelector('#mint-button-container button');
   if (lmntBtn) {
     document.getElementById('mint').scrollIntoView({ behavior: 'smooth' });
@@ -1121,7 +1121,7 @@ async function connectWallet() {
   }
 }
 
-// Ascoltiamo gli eventi Phantom
+// Listen to Phantom wallet events
 window.addEventListener('load', () => {
   if (typeof window.solana === 'undefined' || !window.solana.isPhantom) return;
 
@@ -1132,7 +1132,7 @@ window.addEventListener('load', () => {
     updateNavWallet(null);
   });
 
-  // Auto-reconnect se già autorizzato in precedenza
+  // Auto-reconnect if previously authorized
   window.solana.connect({ onlyIfTrusted: true })
     .then(resp => updateNavWallet(resp.publicKey.toString()))
     .catch(() => {});
