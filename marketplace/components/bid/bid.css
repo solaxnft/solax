@@ -1,0 +1,184 @@
+.bids--container {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 76.25rem;
+    padding-bottom: 2rem;
+}
+
+.bids--container-lm {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    width: 100%;
+    max-width: 76.25rem;
+    padding-bottom: 2rem;
+}
+
+.bid-header {
+    margin-bottom: 2rem;
+}
+
+.bid-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.bid-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumb-item {
+    color: #6C7AA0;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-separator {
+    color: #6C7AA0;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-item.active {
+    color: #6C7AA0;
+    font-weight: 600;
+}
+
+.activity--container-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.125rem 0;
+}
+
+.activity--container-label button {
+    background: #6F4FF2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.single-line-button {
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 120px;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+}
+
+.activity--container-label button:hover {
+    background: #5d3fd9;
+}
+
+.activity--container {
+    width: 100%;
+    max-width: 76.25rem;
+    overflow-x: auto;
+}
+
+.activity--label, .activity--panel, .activity--panel-lm {
+    display: grid;
+    grid-template-columns: .5fr 1.25fr .75fr .75fr 1fr 1fr .5fr;
+    grid-template-rows: auto;
+    align-items: center;
+    min-width: 800px;
+}
+
+.activity--label input, .activity--panel input, .activity--panel-lm input {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    accent-color: #6F4FF2;
+}
+
+.activity--div {
+    width: 100%;
+    border: 0.3px solid #6C7AA0;
+    margin-top: .688rem;
+    margin-bottom: 1.875rem;
+}
+
+.activity--label {
+    width: 100%;
+    padding: 0 .75rem;
+    min-width: 800px;
+}
+
+.activity--panel {
+    background: #1D1932;
+    border-radius: 18px;
+    padding: .75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity--panel-lm {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: .75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.panel--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    min-width: 800px;
+}
+
+
+
+.nft--container {
+    display: flex;
+    gap: .625rem;
+}
+
+#nft {
+    width: 4rem;
+    height: 2.75rem;
+    border-radius: 19px;
+}
+
+.nft--details #name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+#X {
+    display: flex;
+    justify-content: center;
+    color: #DC3546;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.activity--panel #X, .activity--panel-lm #X {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.activity--panel #X:hover, .activity--panel-lm #X:hover {
+    transform: scale(1.2);
+}
